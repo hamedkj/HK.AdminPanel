@@ -1,0 +1,11 @@
+@import "coreui-rtl.css";
+@import "vazir.css";
+
+
+
+:root{
+
+    --cui-font-vazir: Vazirmatn;
+    --cui-body-font-family: var(--cui-font-vazir);
+
+}

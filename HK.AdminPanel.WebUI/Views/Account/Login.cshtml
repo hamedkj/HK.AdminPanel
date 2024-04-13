@@ -1,0 +1,49 @@
+﻿@model HK.AdminPanel.WebUI.ViewModels.LoginRequest
+@{
+    Layout = "~/Views/Shared/_LayoutWithoutHeaderAndSidebar.cshtml";
+}
+
+
+<div class="bg-body-tertiary  d-flex flex-row justify-content-center align-items-center">
+    <div class="col-lg-8">
+        <div class="card-group d-block d-md-flex row">
+            <div class="card col-md-7 p-4 mb-0">
+                <div class="card-body">
+                    <h1>ورود</h1>
+                    <p class="text-body-secondary">به حساب کاربری خود وارد شوید</p>
+                    <form asp-controller="Account" asp-action="Login" method="post">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <svg class="icon">
+                                    <use xlink:href="vendors/coreui/icons/svg/free.svg#cil-user"></use>
+                                </svg>
+                            </span>
+                            <input class="form-control" type="text" asp-for="UserName" placeholder="نام کاربری">
+                        </div>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <svg class="icon">
+                                    <use xlink:href="vendors/coreui/icons/svg/free.svg#cil-lock-locked"></use>
+                                </svg>
+                            </span>
+                            <input class="form-control" type="password" asp-for="Password" placeholder="کلمه عبور">
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <input class="btn btn-primary px-4" type="submit" value="ورود" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card col-md-5 text-white bg-primary py-5">
+                <div class="card-body text-center">
+                    <div>
+                        <h2>درگاه یکپارچه اعتبارسنجی</h2>
+                        <p>لطفا برای ورود نام کاربری و کلمه عبور خود را وارد کنید</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
