@@ -1,3 +1,14 @@
+using System.Globalization;
+using System.Resources;
+
+var culture = new CultureInfo("fa-Ir");
+
+
+Thread.CurrentThread.CurrentCulture = culture;
+Thread.CurrentThread.CurrentUICulture = culture;
+
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

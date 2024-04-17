@@ -1,0 +1,3 @@
+var resourceManager = new ResourceManager("HK.AdminPanel.WebUI.Resources.Messages", typeof(Program).Assembly);
+var resourceSet = resourceManager.GetResourceSet(culture, true, true);
+var greeting = resourceSet.GetString("Greeting");
